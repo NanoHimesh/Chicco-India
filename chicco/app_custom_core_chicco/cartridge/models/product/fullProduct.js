@@ -250,6 +250,10 @@ module.exports = function fullProduct(product, apiProduct, options) {
         value: !empty(apiProduct.custom.returnPolicy) ? apiProduct.custom.returnPolicy : ''
     });
 
+    Object.defineProperty(product, 'jija', {
+        enumerable: true,
+        value: !empty(apiProduct.custom.jija) ? apiProduct.custom.jija : ''
+    });
     
     // var ProductMgr = require('dw/catalog/ProductMgr');
     // var categoryid = ProductMgr.getProduct(product.id);

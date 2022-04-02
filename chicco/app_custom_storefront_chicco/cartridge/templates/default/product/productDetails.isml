@@ -165,6 +165,7 @@
                                 <div class="content">
                                     <h1 class="text-capitalize Detailedproduct" data-pid="${product.id}">
                                         ${product.productName}
+                                        ${product.jija}
                                     </h1>
 
                                     <!-- *****subtile***** -->
@@ -472,6 +473,7 @@
                                             </h6>
                                             <p>
                                                 ${product.highlightsTextDescription8}
+                                                ${product.jija}
                                             </p>
                                         </div>
                                     </div>
