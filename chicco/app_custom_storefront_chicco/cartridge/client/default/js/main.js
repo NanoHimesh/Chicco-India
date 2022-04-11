@@ -11,7 +11,7 @@ $(document).ready(function () {
     processInclude(require('./components/formValidation'));
     processInclude(require('./components/clientSideValidation'));
     processInclude(require('./component/main_design'));
-    processInclude(require('wishlist/product/wishlistHeart'));
+    //processInclude(require('wishlist/product/wishlistHeart'));
     processInclude(require('./component/giftCard'));
     processInclude(require('./font-awesome-5-pro'));
     processInclude(require('./facebookpixel'));

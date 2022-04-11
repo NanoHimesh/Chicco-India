@@ -88,8 +88,8 @@
                                                 <p class="error-message-text"></p>
                                             </div>
 
-                                            <isinclude template="checkout/shipping/shipping" />
-                                            <div class="card border-0 shipping-summary row align-items-center main_title">
+                                            <iscomment> <isinclude template="checkout/shipping/shipping" /> </iscomment>
+                                            <iscomment> <div class="card border-0 shipping-summary row align-items-center main_title">
                                                 <div class="card-header clearfix border-0 col-md-12 pb-2">
                                                     <h6 class="pull-left card-header-custom mb-0">
                                                         ${Resource.msg('heading.checkout.shipping', 'checkout', null)}
@@ -105,7 +105,7 @@
                                                 <div class="card-body pt-2">
                                                     <isinclude template="checkout/shipping/shippingSummary" />
                                                 </div>
-                                            </div>
+                                            </div> </iscomment>
 
                                             <isinclude template="checkout/billing/billing" />
                                             <div class="card border-0 payment-summary row align-items-center main_title">
@@ -134,12 +134,12 @@
                         <div class="row">
                             <div class="col-12 next-step-button">
                                 <div class="my-sm-3 my-0">
-                                    <button id="checkout-shipping-address" class="blue-btn w-100 btn btn-primary btn-block submit-shipping"
+                                    <iscomment> <button id="checkout-shipping-address" class="blue-btn w-100 btn btn-primary btn-block submit-shipping"
                                         type="submit" name="submit" value="submit-shipping" <isif
                                         condition="${pdict.order.usingMultiShipping && !pdict.order.shippable}">disabled
                                         </isif>>
                                         ${Resource.msg('button.next.payment', 'checkout', null)}
-                                    </button>
+                                    </button> </iscomment>
 
                                     <button id="checkout-place-order" class="blue-btn w-100 btn btn-primary btn-block submit-payment"
                                         type="submit" name="submit" value="submit-payment">
